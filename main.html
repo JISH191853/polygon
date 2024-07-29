@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simple Polygon</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="map"></div>
+    <div class="coordinates-container">
+      <div class="header">
+        <input type="text" id="locationName" placeholder="Enter location name" /><br>
+        <button id="doneButton">Done</button>
+        <button id="resetButton">Reset</button>
+        <button id="saveButton">Save</button>
+        <input type="file" id="geoJsonUpload" accept=".geojson,.json">
+        <button id="uploadButton">Upload GeoJSON</button>
+      </div>
+      <div id="coordinates" class="coordinates-list"></div>
+    </div>
+    <div id="areaList" class="arealist-container"></div>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
